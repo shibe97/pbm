@@ -1,6 +1,8 @@
 import * as React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Header from '../Header';
 import Login from '../Login';
+import Register from '../Register';
 import Routes from '../Routes';
 import firebase from '../../firebase';
 import styles from './app.css';
@@ -25,7 +27,11 @@ class App extends React.Component {
       return (
         <div className={styles.wrapper}>
           <Header />
-          <Login />
+          <Switch>
+            <Route exact={true} path="/login" component={Login} />
+            <Route exact={true} path="/register" component={Register} />
+            <Route component={Register} />
+          </Switch>
         </div>
       );
     }

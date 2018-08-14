@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './login.css';
+import styles from './register.css';
 import firebase from '../../firebase';
 
-class Login extends React.Component {
+class Register extends React.Component {
   state = {
     email: '',
     password: '',
@@ -21,7 +21,7 @@ class Login extends React.Component {
     return (
       <div className="Body">
         <div className={styles.panel}>
-          <button className={styles.facebookBtn}>Facebookでログイン</button>
+          <button className={styles.facebookBtn}>Googleアカウントで登録</button>
           <p className={styles.text}>アプリが許可なく投稿することはありません。</p>
           <p>- または -</p>
           <form>
@@ -31,12 +31,12 @@ class Login extends React.Component {
             <input type="password" className={styles.inputText} onChange={(e) => this.setState({password: e.target.value})} />
             <div className={styles.action}>
               <p className={styles.errorText}>{this.state.errorMessage}</p>
-              <input type="button" className={styles.antaaBtn} value="Antaaアカウントでログイン" onClick={() => this.login()} />
+              <input type="button" className={styles.antaaBtn} value="登録" onClick={() => this.login()} />
             </div>
           </form>
           <div className={styles.subArea}>
-            <p className={styles.text}>アカウント未登録の方はこちら</p>
-            <Link className={styles.link} to="/register">新規アカウント登録</Link>
+            <p className={styles.text}>アカウント登録済みの方はこちら</p>
+            <Link className={styles.link} to="/login">ログイン</Link>
           </div>
         </div>
       </div>
@@ -44,4 +44,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default Register;
