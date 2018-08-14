@@ -37,9 +37,9 @@
   font-size: 16px;
 }
 
-.antaaBtn {
+.btn {
   padding: 8px 20px;
-  background-color: #009646;
+  background-color: var(--color-submit);
   color: #fff;
   border: none;
   font-size: 20px;
@@ -49,9 +49,9 @@
   height: 60px;
 }
 
-.facebookBtn {
+.googleBtn {
   padding: 8px 20px;
-  background-color: #3b5998;
+  background-color: #DF4A32;
   color: #fff;
   border: none;
   font-size: 20px;

@@ -21,7 +21,7 @@ class Login extends React.Component {
     return (
       <div className="Body">
         <div className={styles.panel}>
-          <button className={styles.facebookBtn}>Facebookでログイン</button>
+          <button className={styles.googleBtn}>Googleアカウントでログイン</button>
           <p className={styles.text}>アプリが許可なく投稿することはありません。</p>
           <p>- または -</p>
           <form>
@@ -31,7 +31,7 @@ class Login extends React.Component {
             <input type="password" className={styles.inputText} onChange={(e) => this.setState({password: e.target.value})} />
             <div className={styles.action}>
               <p className={styles.errorText}>{this.state.errorMessage}</p>
-              <input type="button" className={styles.antaaBtn} value="Antaaアカウントでログイン" onClick={() => this.login()} />
+              <input type="button" className={styles.btn} value="ログイン" onClick={() => this.login()} />
             </div>
           </form>
           <div className={styles.subArea}>
