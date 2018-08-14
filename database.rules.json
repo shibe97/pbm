@@ -1,0 +1,33 @@
+{
+  "rules": {
+    // ### Permission Setting ###
+    //".read": true,
+    //".write": true
+    ".read": "auth != null",
+    ".write": "auth != null",
+      
+    "qa": {
+      "debug": {
+        "chat": {
+          "threads": {
+            ".indexOn": ["date", "updateDate", "isQuestion"]     // ### Index Setting ###
+          }
+        }
+      },
+			"adhoc": {
+        "chat": {
+          "threads": {
+            ".indexOn": ["date", "updateDate", "isQuestion"]     // ### Index Setting ###
+          }
+        }
+      },
+      "release": {
+        "chat": {
+          "threads": {
+            ".indexOn": ["date", "updateDate", "isQuestion"]     // ### Index Setting ###
+          }
+        }
+      }
+    }
+  }
+}

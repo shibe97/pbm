@@ -1,0 +1,28 @@
+.wrapper {
+  width: 280px;
+  margin-left: 30px;
+}
+
+.list {
+  border-bottom: 1px solid #ccc;
+  padding: 30px 0;
+  font-size: var(--text-small);
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  a {
+    display: block;
+    color: #333;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}

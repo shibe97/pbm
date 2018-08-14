@@ -1,0 +1,33 @@
+.text {
+  padding-bottom: 20px;
+}
+
+.tags {
+  display: flex;
+  padding-bottom: 20px;
+
+  a {
+    margin-right: 20px;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+
+  a {
+    margin-left: 20px;
+  }
+}
+
+.label {
+  border: 1px solid #e26044;
+  padding: 4px 10px;
+  color: #e26044;
+  font-size: 12px;
+  border-radius: 3px;
+  margin-right:10px;
+}

@@ -1,0 +1,10 @@
+:root {
+  --text-xxSmall: 10px;
+  --text-xSmall: 12px;
+  --text-small: 14px;
+  --text-default: 16px;
+  --text-large: 20px;
+  --text-xLarge: 24px;
+  --text-xxLarge: 32px;
+  --text-xxxLarge: 40px;
+}  
