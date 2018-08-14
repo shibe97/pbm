@@ -23,7 +23,7 @@ class Header extends React.Component {
       <header className={styles.wrapper}>
         <Area>
           <div className={styles.container}>
-            <h1><a href="/"><img className={styles.logo} src="/images/logo_2x.png" alt="Antaa" /></a></h1>
+            <h1><a href="/">絵本メモ</a></h1>
             <nav className={styles.right}>
               <ul className={styles.lists}>
                 <li className={styles.list}><a className={`${styles.list} ${styles.home}`} href="/">ホーム</a></li>

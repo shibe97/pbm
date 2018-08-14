@@ -1,8 +1,8 @@
 module.exports = {
-  apiKey: "AIzaSyDyJdU4zYy7Wn4NUa3_lrWENSX-8XxdDps",
-  authDomain: "antaa-qa-adhoc.firebaseapp.com",
-  databaseURL: "https://antaa-qa-adhoc.firebaseio.com",
-  projectId: "antaa-qa-adhoc",
-  storageBucket: "antaa-qa-adhoc.appspot.com",
-  messagingSenderId: "313444772478"
+  apiKey: "AIzaSyDk4CleI0mfzFSU7WDnOyzTVycybPZCA5Y",
+  authDomain: "picturebookmemo.firebaseapp.com",
+  databaseURL: "https://picturebookmemo.firebaseio.com",
+  projectId: "picturebookmemo",
+  storageBucket: "picturebookmemo.appspot.com",
+  messagingSenderId: "1009349291352"
 };
