@@ -6,9 +6,7 @@ import styles from './header.css';
 class Header extends React.Component {
   componentDidMount() {
     if (firebase.auth().currentUser !== null) {
-      firebase.database().ref('qa/adhoc/users/' + firebase.auth().currentUser.uid).once('value').then((snapshot) => {
-        console.log(snapshot.val());
-      })
+      console.log(firebase.auth().currentUser);
     }
   }
 
